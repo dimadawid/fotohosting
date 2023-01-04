@@ -30,7 +30,14 @@ $messages = get_messages();
 <body>
 <div class="container">
 <h1>Описание и фото</h1>
+<div class="row">
+                <div class="col-md-12 text-center my-4">
+                    <a href="index.php"><button class="btn btn-primary">На Главную</button></a>
+                </div>
 
+
+
+            </div>
 
 
     <div class="row">
