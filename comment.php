@@ -36,7 +36,7 @@ $messages = get_messages();
     <div class="row">
 
      
-        <div class="col-md-12">
+        <div class="col-md-4">
 
 
         <?php
