@@ -28,7 +28,7 @@ $messages = get_messages();
 </head>
 
 <body>
-<div class="container">
+<div class="container my-4">
 <h1>Описание и фото</h1>
 <div class="row">
                 <div class="col-md-12 text-center my-4">
