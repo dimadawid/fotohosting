@@ -97,7 +97,7 @@ if (isset($_GET['delimg'])) {
                 <div class="nav">
                     <ul>
                         <li><a href="index.php">главная</a></li>
-                        <li>о нас</li>
+                        <li><a href="about.php">о нас</a></li>
                         <li><a href="comment.php">все фото</a></li>
 
                     </ul>

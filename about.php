@@ -6,13 +6,7 @@ require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/function.php';
 
 
-if (isset($_POST['add'])) {
-    save_message();
-    header(header: "Location: comment.php");
-    die;
-}
 
-$messages = get_messages();
 
 ?>
 
@@ -45,7 +39,7 @@ $messages = get_messages();
                 <div class="nav">
                     <ul>
                         <li><a href="index.php">главная</a></li>
-                        <li><a href="about.php">о нас</a></li>
+                        <li>о нас</li>
                         <li><a href="comment.php">все фото</a></li>
 
                     </ul>
@@ -59,7 +53,7 @@ $messages = get_messages();
     </div>
     </div>
     <div class="container my-4">
-        <h1>фото</h1>
+        <h1>О нас</h1>
         <!-- <div class="row">
             <div class="col-md-12 text-center my-4">
                 <a href="index.php"><button class="btn btn-primary">На Главную</button></a>
@@ -73,23 +67,11 @@ $messages = get_messages();
         <div class="row my-4">
 
 
-            <div class="col-md-4">
+            <div class="col-md-12 text-center">
+            
+           <h3> Публикуйте фотографии здесь</h3>
+           <h3>Получите постоянные ссылки для Facebook, Twitter, форумов и блогов</h3>
 
-
-                <?php
-
-                $stmt = $pdo->prepare("select * from images");
-                $stmt->execute();
-                $imagelist = $stmt->fetchAll();
-
-                foreach ($imagelist as $image) {
-                ?>
-
-                    <img src="<?= $image["image"] ?>" title="<?= $image["name"] ?>" width="350" height="350">
-                <?php
-                }
-                ?>
-            </div>
         </div>
 
 
