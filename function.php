@@ -134,7 +134,13 @@ function save_img(): bool
                             $target_file
                         )
                     );
+
+
                 }
+            }else{
+                $_SESSION['errors'] = 'Картинка не выбрана';
+                return false;
+
             }
         }
 
