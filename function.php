@@ -138,7 +138,7 @@ function save_img(): bool
 
                 }
             }else{
-                $_SESSION['errors'] = 'Картинка не выбрана';
+                $_SESSION['errors'] = 'Картинка не выбрана/не верный формат';
                 return false;
 
             }
