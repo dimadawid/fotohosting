@@ -82,7 +82,7 @@ if (isset($_GET['delimg'])) {
 </head>
 
 <body>
-
+<div class="container-fluid color-blue">
     <div class="header">
         <div class="row">
 
@@ -105,6 +105,7 @@ if (isset($_GET['delimg'])) {
             </div>
 
         </div>
+    </div>
     </div>
 
     <div class="container">

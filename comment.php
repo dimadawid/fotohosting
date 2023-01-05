@@ -30,7 +30,8 @@ $messages = get_messages();
 
 <body>
 
-<div class="header">
+<div class="container-fluid color-blue">
+    <div class="header">
         <div class="row">
 
             <div class="col-md-6">
@@ -56,7 +57,7 @@ $messages = get_messages();
 
         </div>
     </div>
-
+    </div>
     <div class="container my-4">
         <h1>фото</h1>
         <!-- <div class="row">
