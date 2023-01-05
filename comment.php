@@ -30,25 +30,30 @@ $messages = get_messages();
 
 <body>
 
-    <div class="header">
+<div class="header">
         <div class="row">
 
             <div class="col-md-6">
-                <div class="logo">
+                <div class="logo d-flex align-items-center">
                     <img src="./img/logofoto.png" alt="">
+                    <div class="text_logo">Фотохостинг</div>
 
                 </div>
             </div>
             <div class="col-md-6 align-self-center">
                 <div class="nav">
                     <ul>
-                        <li><a href="index.php">главная</a>
+                        <li><a href="index.php">главная</a></li>
                         <li>о нас</li>
                         <li><a href="comment.php">все фото</a></li>
 
                     </ul>
                 </div>
             </div>
+
+        </div>
+    </div>
+
         </div>
     </div>
 

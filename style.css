@@ -27,6 +27,13 @@ a:hover{
     height: auto;
     
 }
+
+.text_logo{
+    color: #fff;
+    text-transform: uppercase;
+    width: 200px;
+    padding-left: 10px;
+}
 .nav ul{
     padding-top: 10px;
    
