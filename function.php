@@ -129,7 +129,10 @@ function save_img(): bool
 
 
                     $res->execute(
-                        array($filename, $target_file)
+                        array(
+                            $filename,
+                            $target_file
+                        )
                     );
                 }
             }

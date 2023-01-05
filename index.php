@@ -87,8 +87,9 @@ if (isset($_GET['delimg'])) {
         <div class="row">
 
             <div class="col-md-6">
-                <div class="logo">
+                <div class="logo d-flex align-items-center">
                     <img src="./img/logofoto.png" alt="">
+                    <div class="text_logo">Фотохостинг</div>
 
                 </div>
             </div>
