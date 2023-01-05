@@ -8,7 +8,7 @@ require_once __DIR__ . '/function.php';
 
 if (isset($_POST['add'])) {
     save_message();
-    header(header: "Location: comment.php");
+    header(header: "Location: fotos.php");
     die;
 }
 
@@ -46,7 +46,7 @@ $messages = get_messages();
                     <ul>
                         <li><a href="index.php">главная</a></li>
                         <li><a href="about.php">о нас</a></li>
-                        <li><a href="comment.php">все фото</a></li>
+                        <li><a href="fotos.php">все фото</a></li>
 
                     </ul>
                 </div>
