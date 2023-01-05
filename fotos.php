@@ -72,10 +72,6 @@ $messages = get_messages();
 
         <div class="row my-4">
 
-
-            <div class="col-md-4">
-
-
                 <?php
 
                 $stmt = $pdo->prepare("select * from images");
@@ -84,14 +80,14 @@ $messages = get_messages();
 
                 foreach ($imagelist as $image) {
                 ?>
-
+<div class="col-md-4">
                     <img src="<?= $image["image"] ?>" title="<?= $image["name"] ?>" width="350" height="350">
-                    
+                    </div>
                 <?php
                 }
                 ?>
-            </div>
-        </div>
+            
+        
 
 
 
