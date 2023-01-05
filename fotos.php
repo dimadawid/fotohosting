@@ -6,11 +6,11 @@ require_once __DIR__ . '/db.php';
 require_once __DIR__ . '/function.php';
 
 
-if (isset($_POST['add'])) {
-    save_message();
-    header(header: "Location: fotos.php");
-    die;
-}
+// if (isset($_POST['add'])) {
+//     save_message();
+//     header(header: "Location: fotos.php");
+//     die;
+// }
 
 $messages = get_messages();
 
@@ -36,7 +36,7 @@ $messages = get_messages();
 
             <div class="col-md-6">
                 <div class="logo d-flex align-items-center">
-                    <img src="./img/logofoto.png" alt="">
+                <a href="index.php"><img src="./img/logofoto.png" alt=""></a>
                     <div class="text_logo">Фотохостинг</div>
 
                 </div>
@@ -86,6 +86,7 @@ $messages = get_messages();
                 ?>
 
                     <img src="<?= $image["image"] ?>" title="<?= $image["name"] ?>" width="350" height="350">
+                    
                 <?php
                 }
                 ?>
