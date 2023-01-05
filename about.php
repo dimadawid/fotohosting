@@ -69,7 +69,7 @@ require_once __DIR__ . '/function.php';
 
             <div class="col-md-12 text-center">
             
-           <h3> Публикуйте фотографии здесь</h3>
+           <h1> Публикуйте фотографии здесь</h1>
            <h3>Получите постоянные ссылки для Facebook, Twitter, форумов и блогов</h3>
 
         </div>

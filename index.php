@@ -82,38 +82,40 @@ if (isset($_GET['delimg'])) {
 </head>
 
 <body>
-<div class="container-fluid color-blue">
-    <div class="header">
-        <div class="row">
+    <div class="container-fluid color-blue">
+        <div class="header">
+            <div class="row">
 
-            <div class="col-md-6">
-                <div class="logo d-flex align-items-center">
-                    <img src="./img/logofoto.png" alt="">
-                    <div class="text_logo">Фотохостинг</div>
+                <div class="col-md-6">
+                    <div class="logo d-flex align-items-center">
+                        <img src="./img/logofoto.png" alt="">
+                        <div class="text_logo">Фотохостинг</div>
 
+                    </div>
                 </div>
-            </div>
-            <div class="col-md-6 align-self-center">
-                <div class="nav">
-                    <ul>
-                        <li><a href="index.php">главная</a></li>
-                        <li><a href="about.php">о нас</a></li>
-                        <li><a href="comment.php">все фото</a></li>
+                <div class="col-md-6 align-self-center">
+                    <div class="nav">
+                        <ul>
+                            <li><a href="index.php">главная</a></li>
+                            <li><a href="about.php">о нас</a></li>
+                            <li><a href="comment.php">все фото</a></li>
 
-                    </ul>
+                        </ul>
+                    </div>
                 </div>
-            </div>
 
+            </div>
         </div>
     </div>
-    </div>
 
-    <div class="container">
+    <div class="container my-5">
+        <div class="row text-center">
+            <h1>Публикуйте фотографии здесь</h1>
+            <div class="additional">Получите постоянные ссылки для Facebook, Twitter, форумов и блогов</div>
+        </div>
 
 
-
-
-        <div class="row my-4">
+        <div class="row my-5">
             <?php if (!empty($_SESSION['errors'])) : ?>
                 <div class="col">
                     <div class="alert alert-danger alert-dismissible fade show" role="alert">
@@ -200,7 +202,7 @@ if (isset($_GET['delimg'])) {
 
                 <div class="row">
                     <div class="col-md-6 offset-md-3">
-                        <p>Добро пожаловать, <?= htmlspecialchars($_SESSION['user']['name']) ?>! <a  class="delbutton" href="?do=exit">Выйти</a></p>
+                        <p>Добро пожаловать, <?= htmlspecialchars($_SESSION['user']['name']) ?>! <a class="delbutton" href="?do=exit">Выйти</a></p>
                     </div>
                 </div>
                 <form action="index.php" method="post" class="row g-3 mb-5">
@@ -260,19 +262,19 @@ if (isset($_GET['delimg'])) {
                     </div>
                 <?php endif; ?>
                 <?php
-            $stmt = $pdo->prepare("select * from images");
-            $stmt->execute();
-            $imagelist = $stmt->fetchAll();
-            ?>
+                $stmt = $pdo->prepare("select * from images");
+                $stmt->execute();
+                $imagelist = $stmt->fetchAll();
+                ?>
 
-            <?php foreach ($imagelist as $image) : ?>
-                <div class="col-md-4 text-center my-4">
-                    <img src="<?= $image["image"] ?>" title="<?= $image["name"] ?>" width="350" height="350">
-                    <a class="delbutton" href="?delimg=<?= $image['id'] ?>">Удалить</a>
-                </div>
-            <?php endforeach; ?>
+                <?php foreach ($imagelist as $image) : ?>
+                    <div class="col-md-4 text-center my-4">
+                        <img src="<?= $image["image"] ?>" title="<?= $image["name"] ?>" width="350" height="350">
+                        <a class="delbutton" href="?delimg=<?= $image['id'] ?>">Удалить</a>
+                    </div>
+                <?php endforeach; ?>
             <?php endif; ?>
-      
+
             </br>
             <!-- <div class="row">
                 <div class="col-md-12 text-center my-4">
