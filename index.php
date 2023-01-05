@@ -59,7 +59,6 @@ if (isset($_GET['delimg'])) {
     $sql = "DELETE FROM `images` WHERE id = ?";
     $q = $pdo->prepare($sql);
     $response = $q->execute(array($id));
-    unlink('test.html');
     header(header: "Location: index.php");
     $_SESSION['errors'] = 'Картинка удалена';
     die;
