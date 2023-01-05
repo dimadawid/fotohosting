@@ -30,7 +30,7 @@ require_once __DIR__ . '/function.php';
 
             <div class="col-md-6">
                 <div class="logo d-flex align-items-center">
-                    <img src="./img/logofoto.png" alt="">
+                <a href="index.php"><img src="./img/logofoto.png" alt=""></a>
                     <div class="text_logo">Фотохостинг</div>
 
                 </div>
